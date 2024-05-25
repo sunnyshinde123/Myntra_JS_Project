@@ -289,6 +289,6 @@ footer{
 }
 
 .place-order{
-    grid-columns: 1/7;
+    grid-column: 1/7;
     margin-top: 8rem;
 }
