@@ -23,10 +23,9 @@ function displayItems(){
         </div>
         <div class="card-body">
           <h5 class="card-title">${ele.company}</h5>
-          <span class="card-text">${ele.item_name}
-            <br><b>Rs. ${ele.current_price}</b>&nbsp; <span class="old-price">Rs ${ele.original_price}</span> &nbsp;<span class="discount">(${ele.discount_percentage}% OFF)</span>
-          </span>
-          <a href="#" class="btn btn-primary addToBag" onClick="addInBag(${ele.id})">Add to Bag</a>
+          <span class="card-text">${ele.item_name}</span>
+          <span class="price-span"><br><b>Rs. ${ele.current_price}</b>&nbsp; <span class="old-price">Rs ${ele.original_price}</span> &nbsp;<span class="discount">(${ele.discount_percentage}% OFF)</span>
+          <a href="#" class="btn btn-primary .btn-add-bag" onClick="addInBag(${ele.id})">Add to Bag</a>
         </div>
     </div>`
     })

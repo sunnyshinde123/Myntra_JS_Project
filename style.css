@@ -125,15 +125,18 @@ footer{
 }
 
 .main-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    margin-left: 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
 }
 
 .card-section{
     height: 31rem;
     background-color: rgb(244, 223, 223);
-    margin-right: 2.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
@@ -173,11 +176,6 @@ footer{
 .card-body .discount{
     color: orange;
     font-size: 0.9rem;
-}
-
-.main-section{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .Bag-Item-Count{
@@ -292,3 +290,13 @@ footer{
     grid-column: 1/7;
     margin-top: 8rem;
 }
+
+.card-text{
+    line-height: 1;
+}
+
+
+.price-span{
+    margin-top: 1rem;
+}
+
