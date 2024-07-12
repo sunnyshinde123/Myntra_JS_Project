@@ -300,3 +300,7 @@ footer{
     margin-top: 1rem;
 }
 
+.tagBtn a{
+    flex-grow: 1;
+  }
+
