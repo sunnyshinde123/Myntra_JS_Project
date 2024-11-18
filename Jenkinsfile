@@ -6,6 +6,7 @@ pipeline {
         stage("Clone Code") {
             steps {
                 // Direct use of a shared library function
+                echo "-----${env.BRANCH_NAME}---------"
                 clone("https://github.com/sunnyshinde123/Myntra_JS_Project.git", env.BRANCH_NAME)
             }
         }
