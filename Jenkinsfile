@@ -5,11 +5,8 @@ pipeline {
     stages {
         stage("Clone Code") {
             steps {
-                script {
-                    // Dynamically clone the current branch
-                    echo "Cloning branch: ${env.BRANCH_NAME}"
-                    clone("https://github.com/sunnyshinde123/Myntra_JS_Project.git", env.BRANCH_NAME)
-                }
+                // Direct use of a shared library function
+                clone("https://github.com/sunnyshinde123/Myntra_JS_Project.git", env.BRANCH_NAME)
             }
         }
         
