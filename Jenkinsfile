@@ -27,7 +27,7 @@ pipeline {
             }
             steps {
                 echo "Pushing Docker image to Docker Hub for the main branch: ${env.BRANCH_NAME}"
-                dockerpush("dockerHubCred", "myntra-app", "latest")
+                dockerpush("cred", "myntra-app", "latest")
             }
         }
         
