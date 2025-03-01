@@ -1,6 +1,6 @@
-@Library('Shared')_
+@Library('JenkinsShared')_
 pipeline {
-    agent { label 'dev-server'}
+    agent { label 'test'}
 
     stages {
         stage("Clone Code") {
