@@ -37,7 +37,7 @@ pipeline {
             }
             steps {
                 echo "Deploying the application from the dev branch: ${env.BRANCH_NAME}"
-                dockerrun("myntra-app", "latest")
+                dockerrun("myntra-app", "latest", "8080:8080")
                 echo "Deployment ho gayi"
             }
         }
